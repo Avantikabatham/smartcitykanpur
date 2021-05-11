@@ -1,0 +1,375 @@
+*{ 
+	 margin:0px;
+	 padding: 0px; box-sizing: border-box;
+	 font-family: 'Open Sans', sans-serif;
+    
+}
+.header{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.3);
+
+	 
+}
+ .bgimage{
+ 	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,50,0.6)), url('images/city1.jpg');
+     width:100%;
+     height:100vh;
+     background-size: 100% 100%;
+    }
+
+
+
+.menu{
+
+	width: 100%;
+	height: 80px;
+	background-color: rgba(0, 0, 0, 0.2);
+
+   /* background-image:url('images/s.jpg');
+    background-repeat: no-repeat; */
+}
+
+.menu ul li a{
+	text-decoration: none;
+}
+/*links*/
+a:link{
+	color:green;
+	background-color: transparent ;
+	text-decoration: none;
+}
+
+a:visited{
+	color:#fff;
+	background-color: transparent ; 
+	text-decoration: none;
+}
+a:hover{
+	color:#85C1F9;
+	 background-color: transparent ; 
+	text-decoration: none;
+}
+a:active{
+	color:#8E44AD;
+	background-color: transparent ;
+	text-decoration: none;
+}
+
+
+.leftmenu{
+	width: 15%;
+	line-height:80px;
+     float:left ;
+}
+
+.leftmenu p{
+	 padding-left: 50px;
+	 color: #fff;
+	 font-weight: bold;
+	 font-size: 23px;
+	 font-family: 'Open Sans', sans-serif;
+	 text-transform: uppercase;	 
+}
+ /* RIGHT=> MENU-BAR */
+.rightmenu{
+	width:85%;
+	height:90px;
+	float:right;
+}
+.rightmenu ul{
+	margin-left: 100px;
+
+}
+.rightmenu ul li{
+
+	
+	display: inline-block; 
+	list-style: none;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 25px;
+	margin: 20px 0px 0px 0px;
+	text-transform: uppercase;
+	border-radius: 98px;
+	border: 2px solid /* #8E44AD */ #00b894 ;
+	text-align: center;
+	float:left; 
+	width: 200px;
+	height: 30px;
+	position: relative;
+  }
+
+
+ .rightmenu ul ul{
+	display: none;
+	position: absolute;
+  }
+.rightmenu ul li:hover >ul {
+	display: block;
+	position: absolute;
+  }
+#ser{
+	position: absolute;
+	top: 10px;
+	right: 0px;
+  }
+.text{
+    margin-top: 190px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+
+.text h1{
+	font-size: 50px;
+	margin: 20px 20px;
+	font-weight: lighter;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.change_content::after{
+	content:'';
+	animation: changetext 5s infinite linear;
+	color:#00b894;
+}
+@keyframes changetext{
+	
+	 100%{content:"Kanpur";}
+	
+}
+.text h6{
+	font-weight: lighter;
+	margin: 20px 20px;
+	font-size:20px; 
+}
+
+/* MIDDLE PAGE */
+.middle{
+	width: 100%;
+   overflow: auto;
+
+}
+.left_middle{
+	width: 50%;
+}
+.left_middle h1{
+	margin:40px 0px 0px 100px;
+	color: blue; 
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.left_middle p{
+	float: left;
+	margin:10px 0px 0px 100px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	word-spacing: 0.3em;
+	font-weight: bold;
+}
+
+.right_middle{
+	width: 50%;
+	float: right;
+}
+
+.right_middle img{
+	
+	margin-left: 10px;
+	margin-top: -250px;
+	border: 5px solid grey;
+	box-shadow: 2px 2px 10px 5px blue;
+}
+
+.btn{
+        padding: 5px 5px;
+        text-align: center;    
+        font-size: 17px;	
+        margin: 20px 0px 0px 230px;
+        cursor: pointer;
+        width: 23%;
+        border-radius: 25px;
+        background-color: blue;
+        opacity: 1;
+}
+ 
+ .box3{
+ 	width: 240px;
+ 	height: 240px;
+ 	background-image:linear-gradient(to bottom right, #2845d1 0%, #61c3f1, #a0e34e 100%); 
+ 	float: right;
+ 	margin-top:-270px;
+ 	transform: translate(-50px, -10px);
+ 	text-align: center;
+ 	padding: 50px  20px;
+ 	color: #fff;
+ 	font-weight:100;
+ 	line-height: 24px;
+ 	font-size:19px;
+
+ }
+
+
+
+
+
+
+/* services*/
+
+.menu1{
+	    clear: both;
+		width: 40%;
+		height: 50%;
+		float: left; 
+        padding: 25px;
+        margin: 0px 20px;
+        background-color:tomato; 
+	}
+.menu1 h2{
+		 text-align: center;
+         font-size: 40px;
+         font-weight: bold;
+	}
+
+
+
+
+/* Login form */
+.rightmenu1{
+	width: 90%;
+	float: right;
+	margin: auto;
+
+}	
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 6px 5px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 25%;
+  border-radius: 50px;
+}
+
+.container {
+  padding: 10px;
+ 
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+    }
+  .cancelbtn {
+     width: 100%;
+   }
+}
+
+/* DIV BOX */
+.box1{
+	width: 300px;
+	height: 300px;
+	background-image: linear-gradient(to bottom right, #2845d1 0%, #61c3f1, #a0e34e 100%);
+	float: right;
+	margin-right: 350px;
+    text-align: center;
+    padding: 70px 20px;
+    color: #fff;
+    font-size: 20px;
+}
+.box2{
+	width: 300px;
+	height: 300px;
+	background-image:linear-gradient(to top left, #FF4500 40%, #61c3f1, #FF6347 100% ) ;
+	float: right;
+    margin: 50px 30px 0px ;	
+    text-align: center;
+    padding: 70px 20px;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+
+/* .footer{
+	 clear: both;
+	 background-color: rgba(0, 0, 0, 0.3);
+	 color: #fff;
+     padding: 10px;
+     text-align: center;
+
+} */
+ /* Footer */
+       .main_footer{
+       	width: 100%;
+       	background-color:blue;
+       	overflow: auto;
+       }
+       .footer1{
+       	float: left;
+       	width: 390px;
+       	margin: 30px 0px 30px 42px;
+       	color: white;
+       	text-align: center;
+        
+        }
+        .footer h3{
+        	font-size: 22px;
+        }
+       .footer1 a{
+       	color: white;
+       	text-decoration: none;
+       }
+       .footer a:hover{
+       	 color: #00b894;
+       	 text-decoration: underline;
+       }
+       .footer1 ul li{
+       	list-style: none;
+        margin: 9px;
+       }
+      .footer1 p{
+      	margin: 6px;
+      	line-height: 1.6em;   
+      }

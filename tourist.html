@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+		}
+		 .bgimage{
+		 	background-image: url('images/k5.jpg');
+		 	width: 100%;
+		 	height: 100vh;
+		 	background-size:100% 100%; 
+		 }
+		 .menu{
+		 	width: 100%;
+		 	height: 80px;
+		 	background-color: /* steelblue; */hotpink;
+		 	/* opacity: 0.5; */
+	        
+		 }
+		 .menu ul{
+		 	list-style-type: none;
+			overflow: hidden;
+		 }
+		 .menu ul li{
+		 	float: left;
+            margin-left: 10px;
+		 }
+		 .menu ul li a{
+		 	color: blue;
+		 	text-decoration: none;
+		 	text-align: center;
+		 	font-size: 22px;
+		 	margin: 20px 25px;
+		 	padding: 5px 20px;
+		 	display:block;
+		 	border-radius: 25px; 
+		 	border: 2px solid white;
+            text-transform: uppercase;
+
+		 }
+
+		 .menu ul li a:hover{
+		 	color: purple;
+		 }
+          #btn {
+          	padding: 12px;
+          	margin: 20px 20px 20px 360px;
+          	background-color: yellow;
+          }
+          #btn a{
+          	color: blue;
+          	text-align: center;
+          	text-decoration: none;
+          	text-transform: uppercase;
+          }
+          
+
+           /* MIDDLE */
+		 .mid{
+		 	text-align: center;
+		 	margin: 150px 0px;
+		 	color: white;
+		 }
+		 .mid h1{
+		 	font-size: 60px;
+		 	font-weight: lighter;
+		 }
+		 .mid p{
+		 	font-size: 90px;
+		 	font-weight: lighter;
+		 }
+		 .change_content::after{
+	        content:'';
+	        animation: changetext 5s infinite linear;
+	        color:hotpink;
+        }
+          @keyframes changetext{
+	        100%{content:"Kanpur";
+         }
+     }
+     /* Second Page */
+      .topnav{
+      	width: 100%;
+      	background-color:lightpink;
+      	overflow: auto;
+      }
+      .topnav h1{	
+      	text-align: center;
+      	font-size: 30px;
+      	padding: 10px;
+      	text-transform: uppercase;
+      	color: blue;
+      	text-decoration: underline;
+      	font-style: italic;
+      }
+
+      .content{
+      	  margin: 20px 10px 30px 42px;
+     	  border: 2px solid grey;
+     	  box-shadow: 3px 3px 4px 6px red;
+     	  float: left;
+     	  width: 390px;
+      }
+       .content img{
+             width: 100%;
+             height:300px;
+       }
+       .desc{
+       	padding: 10px;
+       	text-align: center;
+       	text-transform: uppercase;
+       }
+       .desc a{
+       	color: red;
+       }
+       .desc a:hover{
+       	color: white;
+       }
+     /* Parks */
+     .midnav{
+     	width: 100%;
+     	overflow: auto;
+     	background-color: lightblue;
+     }
+     .midnav h1{
+     	color: blue;
+     	text-align: center;
+     	text-decoration: underline;
+     	font-style: italic;
+     	padding: 10px;
+     } 
+
+     /* MALL */
+     .mall{
+     	width: 100%;
+     	overflow: hidden;
+     	background-color: lightgrey;
+     }
+     .content1{
+     	margin: 20px 10px 30px 42px;
+     	  border: 2px solid grey;
+     	  box-shadow: 3px 3px 4px 6px brown;
+     	  float: left;
+     	  width: 390px;
+     }
+     .mall h2{
+     	text-align: center;
+     	padding: 10px;
+     	font-style: italic;
+     	font-size: 30px;
+     	color: blue;
+     	text-decoration: underline;
+
+     }
+     .content1 img{
+     	width: 100%;
+     }
+
+     .desc1{
+     	text-align: center;
+     	padding: 5px;
+        text-transform: uppercase;
+     }
+     .desc1 a{
+     	color: Brown;
+     }
+     /* Footer */
+       .main_footer{
+       	width: 100%;
+       	background-color:blue;
+       	overflow: auto;
+       }
+       .footer1{
+       	float: left;
+       	width: 390px;
+       	margin: 30px 0px 30px 42px;
+       	color: white;
+       	text-align: center;
+        
+        }
+        .footer h3{
+        	font-size: 22px;
+        }
+       .footer1 a{
+       	color: white;
+       	text-decoration: none;
+       }
+       .footer a:hover{
+       	 color: #00b894;
+       	 text-decoration: underline;
+       }
+       .footer1 ul li{
+       	list-style: none;
+        margin: 9px;
+       }
+      .footer1 p{
+      	margin: 6px;
+      	line-height: 1.6em;
+ 	    
+      }
+	</style>
+</head>
+<body>
+	<!-- HEADER -->
+   <div class="bgimage">
+   	 <div class="menu">
+       <ul>
+ 	 	  <li><a href="index.html">Home</a></li>
+ 	      <li><a href="#">About</a></li>
+ 	 	  <li><a href="#">Gallery</a></li> 
+ 	 	  <li><a href="#">Contact</a></li>
+ 	 	  <a  href="https://www.fabhotels.com/?utm_source=blog&utm_medium=organic&utm_campaign=Blog_Referral_header_button&utm_term=header_button&utm_content=header_button"><button id="btn">Book a Hotel</a></button>
+ 	   </ul>
+ 	 </div>
+ 	  <div class="mid">
+ 	   <h1>Welcome</h1>
+ 	  	  <p>Do Come & Visit <span class="change_content"></span></p>
+ 	  </div>
+   </div>
+   	<!-- middle  -->
+ <div class="topnav">
+ 	<h1>Top Places to Visit in Kanpur</h1>
+ 	<h1>Temples</h1> 
+ 		<div class="content">
+ 		<img src="images/t1.jpg" alt="image">
+ 		 <div class="desc"><a href="https://ourkanpur.com/city/temple/sudhanshu-ashram-kanpur">Sudhanshu Aashram</a></div>	
+ 	</div>
+ 	<div class="content">
+ 		<img src="images/t5.jpg" alt="image">
+ 		 <div class="desc"><a href="https://iskconkanpur.com/">Iskcon Temple</a></div>	
+ 	</div>
+ 	<div class="content">
+ 		<img src="images/t15.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpur.tourismindia.co.in/anandeshwar-temple-kanpur">Aandeshwar Temple</a></div>	
+ 	</div>
+
+ 	<div class="content">
+ 		<img src="images/t3.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpurnagar.nic.in/tourist-place/jk-temple/">JK Temple</a></div>	
+ 	</div>
+
+ 	<div class="content">
+ 		<img src="images/t7.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpur.tourismindia.co.in/jain-glass-temple-kanpur">Jain glass temple</a></div>	
+ 	</div>
+ 	<div class="content">
+ 		<img src="images/t9.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpurnagar.nic.in/tourist-place/kanpur-memorial-church/">Kanpur-memorial- church</a></div>	
+ 	</div>
+ </div>	
+ 	
+ 	<!-- PARKS -->
+ <div class="midnav">
+ 	<h1>PARKS</h1>
+ 	<div class="content">
+ 		<img src="images/t2.jpg" alt="image">
+ 		 <div class="desc"><a href="http://www.kanpurzoo.org/">Kanpur Zoological Park</a></div>	
+ 	</div>
+ 	
+ 	<div class="content">
+ 		<img src="images/t4.jpg" alt="image">
+ 		 <div class="desc"><a href="https://en.wikipedia.org/wiki/Ganges_Barrage"> Luv Kush Barrage</a></div>	
+ 	</div>
+
+ 	<div class="content">
+ 		<img src="images/Japani-Garden-kanpur.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpur.tourismindia.co.in/japani-garden-kanpur">Japani-garden </a></div>	
+ 	</div>
+
+ 	<div class="content">
+ 		<img src="images/t8.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpur.tourismindia.co.in/kamla-retreat-kanpur">Kamla Retreat</a></div>	
+ 	</div>
+
+ 	<div class="content">
+ 		<img src="images/t10.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpurnagar.nic.in/tourist-place/green-park/">Green Park Stadium</a></div>	
+ 	</div>
+ 	<div class="content">
+ 		<img src="images/t11.jpg" alt="image">
+ 		 <div class="desc"><a href="https://blueworld.co.in/">Blue world theme park</a></div>	
+ 	</div>
+
+ 	<div class="content">
+ 		<img src="images/t12.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpurnagar.nic.in/tourist-place/nana-rao-park/">Nana rao park</a></div>	
+ 	</div>
+
+ 	<div class="content">
+ 		<img src="images/t13.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpur.tourismindia.co.in/bithoor-kanpur">Bithoor kanpur</a></div>	
+ 	</div>
+ 
+ 	<div class="content">
+ 		<img src="images/t14.jpg" alt="image">
+ 		 <div class="desc"><a href="https://kanpur.tourismindia.co.in/moti-jheel-kanpur">Moti-jheel</a></div>	
+ 	</div>
+ </div>
+ 	
+ <!-- MALLS -->
+ <div class="mall">
+  	<h2>MALLS</h2>
+ 	<div class="content1">
+ 		<img src="images/m1.jpg" alt="image">
+ 		 <div class="desc1"><a href="http://zsquaremall.com/">Z Square</a></div>	
+ 	</div>
+
+ 	<div class="content1">
+ 		<img src="images/m3.jpg" alt="image">
+ 		 <div class="desc1"><a href="http://ravemoti.com/mainpage.html">Rave moti </a></div>	
+ 	</div>
+
+ 	<div class="content1">
+ 		<img src="images/m2.jpg" alt="image">
+ 		 <div class="desc1"><a href="https://magicpin.in/Kanpur/Kalyanpur/Fashion/Vishal-Mega-Mart/store/305683/">Vishal mega mart</a></div>	
+ 	</div>
+ </div>
+
+ <!-- footer -->
+ <div class="main_footer">
+ 	<div class="footer">
+ 	<div class="footer1">
+      <h3>About Website</h3>
+        <ul>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="#">Services</a></li>
+        	<li><a href="#">About</a></li>
+        	<li><a href="#">Gallery</a></li>
+        	<li><a href="#">Contact</a></li>
+        </ul>
+    </div> 
+    <div class="footer1">
+    	<h3>Contact Us</h3>
+    	    <p>Kakadeo,Kanpur <br/>
+    	    	Uttar pradesh 208001 <br> 
+    	    	Phone: 0512 240 010<br> 
+    	    	Email: mapgroup@gmail.com
+    	    </p> 
+    	    <ul>
+    	    	<li><a href=""></a></li>
+    	    </ul>
+    </div>
+
+      
+  <div class="footer1">
+ 	<h3>Visit Links</h3>	
+      <ul>
+      	<li><a href="https://threebestrated.in/gym-in-kanpur-up">Gym in Kanpur</a></li>
+      	<li><a href="https://threebestrated.in/yoga-classes-in-kanpur-up">Yoga classes in Kanpur</a>
+      	</li>
+      </ul> 
+   </div> 	
+  </div> 
+ </div>
+</body>
+</html>
